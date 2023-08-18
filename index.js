@@ -116,5 +116,3 @@ async function task_done(id) {
 
 get_all()
 
-
-console.log(tasks_g)
