@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="flex justify-center">
+    <!-- m-5 shadow-lg 30px -->
+    <div class="shadow-sm border-gray-300 rounded-lg m-2 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-400x">
+        <h1 class="text-2xl font-bold underline">
+            Tasks
+          </h1>
+          <div class="mb-1">
+            <input type="text" id="input_filed_text" class="shadow-sm border-gray-300 rounded-lg m-2 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-400 mb-1" placeholder="Enter some text..."></input>
+            <button type="button" id="add_btn" onclick="add_btn_clicked()" class="m-2 px-1 py-1 bg-blue-600 text-white rounded-lg  shadow-sm hover:bg-indigo-500 focus:ring-2 focus:ring-indigo-200 text-2l mb-1">ADD</button>
+          </div>
+        <ul id="list_con">
+            <!-- <li class="m-2 flex border-2 border-grey-100 rounded-xl">
+                <div class="flex-1 ">Buy</div>
+                <button class="flex-2 mr-1 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 rounded-full">🗑️</button>
+                <button class="flex-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 rounded-full">✏️</button>
+            </li>
+            <li class="m-2 flex border-2 border-grey-100 rounded-xl">
+                <div class="flex-1 ">do</div>
+                <button class="flex-2 mr-1 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 rounded-full">🗑️</button>
+                <button class="flex-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 rounded-full">✏️</button>
+            </li> -->
+            
+        </ul>  
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
